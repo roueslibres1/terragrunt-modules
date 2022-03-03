@@ -10,6 +10,12 @@ variable "name" {
   type          = string
 }
 
+variable "organization" {
+  default       = ""
+  description   = "The organization of the repository, actual value stored in terragrunt."
+  type          = string
+}
+
 variable "description" {
   default       = ""
   description   = "The description of the repository, actual value stored in terragrunt."

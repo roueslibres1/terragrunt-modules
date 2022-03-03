@@ -27,3 +27,9 @@ variable "visibility" {
   description   = "The visibility of the repository, actual value stored in terragrunt."
   type          = string
 }
+
+variable "ci_token" {
+  default       = ""
+  description   = "The ci_token to set as secret, actual value stored in terragrunt."
+  type          = string
+}

@@ -6,3 +6,9 @@ resource "github_repository" "repo" {
   allow_squash_merge = false
   delete_branch_on_merge = true
 }
+
+resource "github_actions_secret" "ci_token" {
+  repository       = var.name
+  secret_name      = "CI_TOKEN"
+  plaintext_value  = var.ci_token
+}

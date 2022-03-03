@@ -33,3 +33,9 @@ variable "ci_token" {
   description   = "The ci_token to set as secret, actual value stored in terragrunt."
   type          = string
 }
+
+variable "auto_init" {
+  default       = true
+  description   = "The auto_init setting, actual value stored in terragrunt."
+  type          = bool
+}

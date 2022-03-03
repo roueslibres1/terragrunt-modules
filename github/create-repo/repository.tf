@@ -5,6 +5,7 @@ resource "github_repository" "repo" {
   allow_merge_commit = false
   allow_squash_merge = false
   delete_branch_on_merge = true
+  auto_init = var.auto_init
 }
 
 resource "github_actions_secret" "ci_token" {

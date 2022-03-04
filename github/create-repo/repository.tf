@@ -9,7 +9,7 @@ resource "github_repository" "repo" {
 }
 
 resource "github_actions_secret" "ci_token" {
-  repository       = var.name
+  repository       = github_repository.repo.name
   secret_name      = "CI_TOKEN"
   plaintext_value  = var.ci_token
 }

@@ -7,8 +7,11 @@ It is generated with git-chglog -o CHANGELOG.md
 ## [Unreleased]
 
 
-<a name="v0.0.1-rc"></a>
-## v0.0.1-rc - 2022-03-03
+<a name="v0.0.1"></a>
+## v0.0.1
+### Bug Fixes
+- set dependency between action secret and repo Hopefully this fixes the error on creation because terraform does not know to create the repo first
+
 ### CI
 - add autotag and changelog generation
 
@@ -21,4 +24,4 @@ It is generated with git-chglog -o CHANGELOG.md
 - **github-createrepo:** add CI_TOKEN as default action secret
 
 
-[Unreleased]: https://github.com/roueslibres1/terragrunt-modules/compare/v0.0.1-rc...HEAD
+[Unreleased]: https://github.com/roueslibres1/terragrunt-modules/compare/v0.0.1...HEAD

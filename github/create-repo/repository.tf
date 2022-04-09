@@ -2,8 +2,9 @@ resource "github_repository" "repo" {
   name        = var.name
   description = var.description
   visibility = var.visibility
-  allow_merge_commit = false
+  allow_merge_commit = true
   allow_squash_merge = false
+  allow_rebase_merge = false
   delete_branch_on_merge = true
   auto_init = var.auto_init
 }
